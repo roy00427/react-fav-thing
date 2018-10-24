@@ -26,12 +26,14 @@ class App extends Component {
 			]
 		}
 	}
-	addLists=(data)=>{
+	addLists=()=>{
 		
 	}
-updateLists=(data)=>{
-//		let lists = this.state.lists;
-//	let index = lists.findIndex(item=>item.id==list.id);
+    updateLists=()=>{
+
+	}
+    editedLists=()=>{
+		
 	}
 
 	render() {
@@ -41,7 +43,8 @@ updateLists=(data)=>{
 			<main>
 				
 			 <AddForm changeParentState={this.addList} list={this.state.list}/>
-        <ListContainer changeParentState={this.updateLists} list={this.state.list}/>
+             <ListContainer changeParentState={this.updateLists} list={this.state.list}/>
+			
 			</main>
 		  </div>
 		);
